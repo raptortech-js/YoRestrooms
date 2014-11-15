@@ -20,7 +20,7 @@ def main():
     #return render_template('index.html')
 
 
-@app.errorhandler(404)
+#@app.errorhandler(404)
 def handle_error(e):
     return render_template('404.html')
 

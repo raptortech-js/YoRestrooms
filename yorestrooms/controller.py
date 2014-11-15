@@ -1,4 +1,4 @@
-from yotaxi import app
+from yorestrooms import app
 from flask import request, render_template
 #from API_KEY import api_token
 import os

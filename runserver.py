@@ -1,4 +1,4 @@
-from yorestrooms import app
+from yotaxi import app
 import os
 
 if __name__ == "__main__":

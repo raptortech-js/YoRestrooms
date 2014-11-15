@@ -16,7 +16,8 @@ def send_yo(username, link):
 @app.route('/')
 def main():
     """Index Controller"""
-    return render_template('index.html')
+    return 'OK'
+    #return render_template('index.html')
 
 
 @app.errorhandler(404)

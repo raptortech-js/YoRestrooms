@@ -28,6 +28,7 @@ def handle_error(e):
 def noresult():
     return render_template('noresult.html')
 
+
 @app.route('/yo')
 def yo():
     """Handle callback request"""

@@ -1,7 +1,10 @@
 from yotaxi import app
 from flask import request, render_template
-from API_KEY import api_token
+#from API_KEY import api_token
+import os
 import requests
+
+api_token = os.environ['HEROKU_KEY']
 
 YO_API = "https://api.justyo.co/yo/"
 

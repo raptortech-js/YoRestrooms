@@ -9,9 +9,11 @@ YO_API = "https://api.justyo.co/yo/"
 _refuge_restrooms_production = "http://refugerestrooms.org"
 
 if 'RR_SERVER' in os.environ:
-    REFUGE_RESTROOMS_BASE = os.environ[RR_SERVER]
+    REFUGE_RESTROOMS_BASE = os.environ['RR_SERVER']
 else:
     REFUGE_RESTROOMS_BASE = _refuge_restrooms_production
+
+REFUGE_RESTROOMS_BASE = 'http://6661d661.ngrok.com'
 
 
 def send_yo(username, link):

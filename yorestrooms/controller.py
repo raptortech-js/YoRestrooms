@@ -3,7 +3,7 @@ from flask import request, url_for, render_template
 import os
 import requests
 
-api_token = os.environ['HEROKU_KEY']
+api_token = os.environ['YO_API_KEY']
 
 YO_API = "https://api.justyo.co/yo/"
 _refuge_restrooms_production = "http://refugerestrooms.org"

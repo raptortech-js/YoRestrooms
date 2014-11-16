@@ -28,13 +28,13 @@ h1 {
     font-size: 13vmin;
     text-rendering: optimizeLegibility;
 }
-.footer {
+footer {
     bottom:0px;
     left:0px;
     right:0px;
-    font-size: 30px; 
+    font-size: 30px;
     font-size: 3vmin;
-    text-align: left; 
+    text-align: center;
     padding: 3% 0;
     text-rendering: optimizeLegibility;
 }
@@ -69,12 +69,22 @@ a:active {color:white;}  /* selected link */
 </style>
 </head>
 <body>
-<div class="header">{% block header %}{% endblock %}</div>
-<div class="content">{% block content %}{% endblock %}</div>
-<div class="footer">
-<footer>
-<p>Original YOTAXI built by <a id="link" href="http://twitter.com/itsnauman">@itsnauman</a> using Yo & Google Places API. Modified to YORESTROOMS by Jackie Scholl as part of Project BE using <a id=“link” href=“http://refugerestrooms.org”>Refuge Restrooms</a>.</p>
-</footer>
-</div>
+  <div class="header">
+    {% block header %}{% endblock %}
+  </div>
+
+  <div class="content">
+    {% block content %}{% endblock %}
+  </div>
+
+  <footer>
+    <p>
+      Original YOTAXI built by <a id="link" href="http://twitter.com/itsnauman">@itsnauman</a> using Yo & Google Places API.
+    </p>
+
+    <p>
+      Modified to YORESTROOMS by Jackie Scholl as part of Project BE using <a id=“link” href=“http://refugerestrooms.org”>Refuge Restrooms</a>.</p>
+    </p>
+  </footer>
 </body>
 </html>

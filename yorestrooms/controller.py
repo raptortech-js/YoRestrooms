@@ -38,12 +38,13 @@ def yo():
     username = request.args.get('username')
     location = request.args.get('location')
     if location is None:
-        send_yo(username, 'http://yo-restrooms.herokuapp.com/noresult')     
-    else:
-        splitted = location.split(';')
-        latitude = splitted[0]
-        longitude = splitted[1]
-        link = ("http://www.refugerestrooms.org/restrooms?utf8=%E2%9C%93"
-                "&search=Current+Location&lat={0}&long={1}").format(latitude, longitude)
-        send_yo(username, link)
+        send_yo(username, 'http://yo-restrooms.herokuapp.com/noresult')
+        return 'No location'
+    
+    splitted = location.split(';')
+    latitude = splitted[0]
+    longitude = splitted[1]
+    link = ("http://www.refugerestrooms.org/restrooms?utf8=%E2%9C%93"
+            "&search=Current+Location&lat={0}&long={1}").format(latitude, longitude)
+    send_yo(username, link)
     return 'OK'
